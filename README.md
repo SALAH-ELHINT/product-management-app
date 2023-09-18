@@ -1,66 +1,144 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Product Management App
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Product Management App is a web application built using Laravel, Tailwind CSS, Vue.js, Laravel Jetstream, Nertia.js, and PHPUnit. It allows users to store and manage their products with features for user authentication, CRUD operations on products, searching, filtering, and more.
 
-## About Laravel
+## Table of Contents
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [Product Management App](#product-management-app)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Technologies Used](#technologies-used)
+    - [Screenshots](#screenshots)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- User authentication and authorization.
+- Add, edit, and delete products with details like name, description, size, and type.
+- List products with search and pagination functionality.
+- Basic validation to ensure required product fields are filled.
+- Filter products based on specific criteria (e.g., name, type).
 
-## Learning Laravel
+## Getting Started
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Prerequisites
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Before you begin, ensure you have met the following requirements:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **PHP**: Ensure you have PHP installed on your system.
+- **Composer**: Install Composer, a PHP package manager.
+- **Node.js and NPM**: Install Node.js and NPM to manage JavaScript dependencies.
+- **MySQL**: Set up a MySQL database for the application.
 
-## Laravel Sponsors
+### Installation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+1. Clone the repository:
 
-### Premium Partners
+   ```bash
+   git clone https://github.com/SALAH-ELHINT/product-management-app.git
+   ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+2. Navigate to the project directory:
 
-## Contributing
+   ```bash
+   cd product-management-app
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3. Install the project dependencies:
 
-## Code of Conduct
+   ```bash
+    composer install
+    npm install && npm run dev
+    ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. Create a copy of the `.env.example` file and rename it to `.env`:
+   
+   ```bash
+   cp .env.example .env
+   ```
 
-## Security Vulnerabilities
+5. Generate an application key:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+   ```bash
+    php artisan key:generate
+    ```
 
-## License
+6. Update the `.env` file with your database credentials:
+   
+   ```bash
+   DB_CONNECTION=mysql
+   DB_HOST=
+    DB_PORT=
+    DB_DATABASE=
+    DB_USERNAME=
+    DB_PASSWORD=
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+7. Run the database migrations and seed the database with products:
+    
+    ```bash
+    php artisan migrate --seed
+    ```
+
+8.  Start the application:
+    
+    ```bash
+    php artisan serve
+    ```
+
+9.  Visit the application at `http://localhost:8000`.
+    
+### Usage
+
+- Register a new user account or log in with the default credentials:
+  - **Email**: `
+  - **Password**: ``
+  - **Role**: `admin`
+  - **Role**: `user`
+  
+- Add, edit, and delete products.
+- Filter products by name, type, and size.
+- Search for products by name.
+- View product details.
+- Log out of the application.
+- Log in with a different user account.
+
+### Technologies Used
+- Laravel: PHP web application framework.
+- Tailwind CSS: Utility-first CSS framework.
+- Vue.js: JavaScript framework for building user interfaces.
+- Laravel Jetstream: Provides pre-built authentication scaffolding.
+- Nertia.js: A package for building server-rendered Vue.js applications.
+- PHPUnit: PHP testing framework for unit testing.
+- MySQL: Relational database management system.
+- Git: Version control system.
+- GitHub: Hosting service for Git repositories.
+
+
+### Screenshots
+
+![Home Page](https://user-images.githubusercontent.com/54600664/132135001-0b0a0b0a-0b0a-0b0a-0b0a-0b0a0b0a0b0a.png)
+
+![About Me](https://user-images.githubusercontent.com/54600664/132135001-0b0a0b0a-0b0a-0b0a-0b0a-0b0a0b0a0b0a.png)
+
+![Login](https://user-images.githubusercontent.com/54600664/132134964-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+
+![Register](https://user-images.githubusercontent.com/54600664/132134966-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+
+![Products](https://user-images.githubusercontent.com/54600664/132134967-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+
+![Add Product](https://user-images.githubusercontent.com/54600664/132134968-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+
+![Edit Product](https://user-images.githubusercontent.com/54600664/132134969-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+
+![Product Details](https://user-images.githubusercontent.com/54600664/132134970-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+
+![Filter Products](https://user-images.githubusercontent.com/54600664/132134971-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+
+![Search Products](https://user-images.githubusercontent.com/54600664/132134972-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+
+![Logout](https://user-images.githubusercontent.com/54600664/132134973-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+
