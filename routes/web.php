@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,22 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+
+    Route::get('/product', [ProductController::class, 'index'])->name('product.index');
+
+    Route::get('/product/create', [ProductController::class, 'create'])->name('product.create');
+
+    Route::post('/product', [ProductController::class, 'store'])->name('product.store');
+
+    Route::get('/product/{id}', [productController::class, 'show'])->name('product.show');
+
+    Route::get('/product/{id}/edit', [ProductController::class, 'edit'])->name('product.edit');
+
+    Route::put('/product/update/{id}', [ProductController::class, 'update'])->name('product.update');
+
+    Route::delete('/product/{id}', [ProductController::class, 'destroy'])->name('product.destroy');
 });
+
+Route::get('/AboutMe', function () {
+    return Inertia::render('AboutMe');
+})->name('AboutMe');
