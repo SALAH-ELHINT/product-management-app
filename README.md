@@ -120,25 +120,19 @@ Before you begin, ensure you have met the following requirements:
 
 ### Screenshots
 
-![Home Page](https://user-images.githubusercontent.com/54600664/132135001-0b0a0b0a-0b0a-0b0a-0b0a-0b0a0b0a0b0a.png)
+![Home Page](https://cdn.discordapp.com/attachments/950852158117511208/1153234156805959720/Screenshot_2023-09-18_063440.png)
 
-![About Me](https://user-images.githubusercontent.com/54600664/132135001-0b0a0b0a-0b0a-0b0a-0b0a-0b0a0b0a0b0a.png)
+![About Me](https://cdn.discordapp.com/attachments/950852158117511208/1153234157091160064/Screenshot_2023-09-18_063504.png)
 
-![Login](https://user-images.githubusercontent.com/54600664/132134964-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+![Login](https://cdn.discordapp.com/attachments/950852158117511208/1153234157326049300/Screenshot_2023-09-18_063530.png)
 
-![Register](https://user-images.githubusercontent.com/54600664/132134966-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+![Register](https://cdn.discordapp.com/attachments/950852158117511208/1153234157573517373/Screenshot_2023-09-18_063549.png)
 
-![Products](https://user-images.githubusercontent.com/54600664/132134967-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+![Products](https://cdn.discordapp.com/attachments/950852158117511208/1153234157825163294/Screenshot_2023-09-18_063706.png)
 
-![Add Product](https://user-images.githubusercontent.com/54600664/132134968-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+![Add Product](https://cdn.discordapp.com/attachments/950852158117511208/1153234158127161344/Screenshot_2023-09-18_063801.png)
 
-![Edit Product](https://user-images.githubusercontent.com/54600664/132134969-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+![Edit Product](https://cdn.discordapp.com/attachments/950852158117511208/1153234158387212358/Screenshot_2023-09-18_063821.png)
 
-![Product Details](https://user-images.githubusercontent.com/54600664/132134970-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
-
-![Filter Products](https://user-images.githubusercontent.com/54600664/132134971-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
-
-![Search Products](https://user-images.githubusercontent.com/54600664/132134972-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
-
-![Logout](https://user-images.githubusercontent.com/54600664/132134973-9b6b8b0a-3b0a-4b0a-8b0a-0b0a0b0a0b0a.png)
+![Delete Product](https://cdn.discordapp.com/attachments/950852158117511208/1153234158613692496/Screenshot_2023-09-18_063852.png)
 
